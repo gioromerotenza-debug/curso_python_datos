@@ -1,0 +1,178 @@
+# contadores
+#contador=0
+#guias= ["G001", "G002", "G003", "GOO4", "G005", "G006"]
+#for guia in guias:
+#    contador +=1
+#    print("revisando envio:", guias)
+
+#print("Total: ", contador)
+
+#ciclo for
+ 
+# guias = ["G001", "G002", "G003", "G004", "G005", "G006"]
+ 
+# for memo in guias:
+#     print("Revisando envío:", memo)
+   
+# #for+range
+ 
+# for consecutivo in range(2):
+#     print("Revisando envío:", guias[consecutivo])
+ 
+# for consecutivo in range(2, 5):
+#     print("Revisando envío:", guias[consecutivo])
+   
+# #contadores
+ 
+# contador = 0
+ 
+# for guia in guias:
+#     contador += 1
+#     print("Revisando", guia)
+ 
+# print("Total:", contador)
+ 
+# #acumulador de kms
+ 
+# distancias = [15, 22, 10, 18]
+ 
+# distancia_total = 0
+ 
+# for distancia in distancias:
+#     distancia_total += distancia
+ 
+# print("Distancia total:", distancia_total)
+
+#acumulador
+# distancias = [15, 22, 10, 18]
+
+#distancia_total= 0
+
+#for distancia in distancias:
+#    distancia_total += distancia
+
+#print("distancia total:", distancia_total) 
+
+#while
+
+#envios = [{"Estado": "Entregado"},
+ #         {"Estado": "En ruta"},
+  #        {"Estado": "Devuelto"},
+   #       {"Estado": "Entregado"},
+   #       {"Estado": "Devuelto"},
+   #       {"Estado": "Entregado"}]
+
+#entregado = 0
+#devueltos = 0
+#en_ruta = 0
+
+#for envio in envios:
+
+#    if envio["Estado"]=="Entregado":
+#       entregado += 1
+
+#    elif envio["Estado"]=="En ruta":
+#        en_ruta += 1
+#    else :
+#        devueltos += 1
+
+#print("Resumen envios")
+#print("Entregados:", entregado)
+#print("En ruta:", en_ruta)
+#print("Devueltos:", devueltos)
+
+#guia= "G001"
+
+#intentos = 0
+#entregado = False
+#
+#while intentos <3 and entregado == False:
+#    intentos += 1
+
+#print("guia", guia)
+#print("intentos de entrega", intentos)
+
+#resultado = input("se entrego el paquete? (s/N):  ").lower()
+
+#f resultado == "s":
+#    entregado=True
+#else: 
+#    entregado=False
+
+#if entregado:
+#    print("Envio entregado")
+#else:
+#    print("Envio devuelto")
+
+# tiempos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# grupo_1_3=0
+# grupo_4_6=0
+# grupo_7_9=0
+# grupo_10_12 = 0
+
+# for tiempo in tiempos:
+#     if 1 <= tiempo <= 3:
+#         grupo_1_3 += 1
+#     elif 4 <= tiempo <= 6:
+#         grupo_4_6 += 1
+#     elif 7 <= tiempo <= 9:
+#         grupo_7_9 +=1
+#     elif 10 <= tiempo <= 12:
+#         grupo_10_12 += 1
+
+    # print("Reporte tiempos de entrega")
+    # print("De 1 a 3 días:", grupo_1_3, "entregas")
+    # print("De 4 a 6 días:", grupo_4_6, "entregas")
+    # print("De 7 a 9 días:", grupo_7_9, "entregas")
+    # print("De 10 a 12 días:", grupo_10_12, "entregas")
+
+#reto
+
+kilometrajes = [320, 780, 1250, 1680, 450, 920, 1420, 1850, 610, 1100, 250, 1550]
+
+# total_kilometros = 0
+# for kilometro in kilometrajes:
+#     total_kilometros += kilometro
+# print("Kilometros recorridos flota:", total_kilometros, "km")
+
+
+
+
+uso_reciente = 0
+seguimiento = 0
+programar_revision = 0
+prioridad_alta = 0
+
+reporte = [{"v-101": 320},
+         {"v-102": 780},
+         {"v-103": 1250},
+         {"v-104": 1680},
+         {"v-105": 450},
+         {"v-106": 920},
+         {"v-107": 1420},
+         {"v-108": 1850},
+         {"v-109": 610},
+         {"v-110": 1100},
+         {"v-111": 250},
+         {"v-112": 1550}]
+
+for kilometros in kilometrajes:
+     if 0 <= kilometros <= 499:
+        uso_reciente += 1
+     elif 500 <= kilometros <= 999:
+         seguimiento += 1
+     elif 1000 <= kilometros <= 1499:
+         programar_revision += 1
+     elif 1500 <= kilometros <= 1999:
+         prioridad_alta += 1
+
+print("Reporte kilometraje")
+print("De 0 a 499 kilometros:", uso_reciente, "uso reciente")
+print("De 500 a 999 kilometros:", seguimiento, "Requiere seguimiento")
+print("De 1000 a 1499 kilometros:", programar_revision, "Programar revisiòn")
+print("De 1500 a 1999 kilometros:", prioridad_alta, "Prioridad alta")
+
+
+
+
+

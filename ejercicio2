@@ -1,0 +1,16 @@
+producto = ('memoria ram 16gb')
+#print(producto.capitalize())
+#print(producto.replace("a","e"))
+#print(producto.upper())
+#print(producto + " si")
+# print(producto.strip("s"))
+#nombre="  JUAN CARLOS LOPEZ GONZALEZ   "
+#print(f"El nombre del cliente es: {nombre.strip().title()}")
+#print(nombre)
+nombres=[" MARIA GOMEZ ", "juan perez", " ANA LOPEZ "]
+#print(nombres)
+#print(nombres[0])
+#print(nombres[2].strip().title())
+#print(nombres[1].title())
+#print(nombres[0].strip().title())
+print(nombres[0].strip())
